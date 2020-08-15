@@ -10,6 +10,6 @@ def count_empty_strings(array)
   # Return the total number of EMPTY strings in the provided array using the count enumerable
   array.count do |element|
     binding.pry
-    #element.is_a? String && element.to_s.empty?
+    element.class == String && element.to_s.empty?
   end
 end
